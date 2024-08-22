@@ -3,7 +3,7 @@ let resetBtn = document.querySelector("#reset-btn");
 let newGameBtn = document.querySelector("#newgame-btn");
 let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
-let turnO = true;
+let turnO = false;
 let count = 0;
 const winPatterns = [
     [0, 1, 2],
@@ -23,7 +23,7 @@ const disableBoxes = () => {
 }
 
 const resetGame = () => {
-    turnO = 0;
+    turnO = false;
     count = 0;
     for (let box of boxes) {
         box.disabled = false;
@@ -68,8 +68,10 @@ const checkWinner = () => {
         let val1 = boxes[pattern[0]].innerText;
         let val2 = boxes[pattern[1]].innerText;
         let val3 = boxes[pattern[2]].innerText;
-        if (val1 === val2 && val2 === val3 && val1 != "" && val2 != "" && val3 != "")
+        if (val1 === val2 && val2 === val3 && val1 != "" && val2 != "" && val3 != "") {
             showWinner(val1);
+            return true;
+        }
     }
 }
 
