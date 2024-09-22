@@ -1,0 +1,51 @@
+body {
+    background-color: #3f08be;
+    margin: 0;
+    padding: 0;
+}
+
+.piano {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 80vh;
+    background-color: #3f08be;
+}
+
+.white {
+    width: 50px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.black {
+    width: 30px;
+    height: 120px;
+    background-color: black;
+    position: relative;
+    left: -15px;
+    z-index: 2;
+}
+
+.D,
+.E,
+.G,
+.A,
+.B {
+    margin-left: -30px;
+}
+
+h1,
+h4,
+footer {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+footer {
+    text-align: top;
+}
