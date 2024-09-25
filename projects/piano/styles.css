@@ -1,5 +1,5 @@
 body {
-    background-color: #3f08be;
+    background-color: #075174;
     margin: 0;
     padding: 0;
 }
@@ -8,26 +8,32 @@ body {
     display: flex;
     justify-content: center;
     align-items: top;
-    height: 80vh;
-    background-color: #3f08be;
+    height: 70vh;
+    background-color: #075174;
 }
 
 .white {
-    width: 50px;
-    height: 200px;
+    width: 100px;
+    height: 400px;
     background-color: white;
     border: 1px solid black;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .black {
-    width: 30px;
-    height: 120px;
+    width: 60px;
+    height: 240px;
     background-color: black;
     position: relative;
-    left: -15px;
-    z-index: 2;
+    left: -30px;
+    z-index: 1;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .D,
@@ -35,17 +41,25 @@ body {
 .G,
 .A,
 .B {
-    margin-left: -30px;
+    margin-left: -60px;
 }
 
-h1,
-h4,
+h1
+{
+    color: white;
+    text-align: center;
+    margin: 30px;
+    font-size: xx-large
+}
+h4{
+    color: white;
+    text-align: center;
+    margin: 10px;
+    font-size: larger;
+}
 footer {
+    text-align: top;
     color: white;
     text-align: center;
     margin: 0;
-}
-
-footer {
-    text-align: top;
 }
