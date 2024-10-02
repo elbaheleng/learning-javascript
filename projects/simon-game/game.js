@@ -35,6 +35,11 @@ function gameOver() {
     level = 0;
     userPattern = [];
     compPattern = [];
+    $('body').addClass("game-over").delay(100).queue(function () {
+        $(this).removeClass("game-over").dequeue();
+    });
+    var audio = new Audio('sounds/wrong.mp3');
+    audio.play();
 }
 $(".btn").on("click", function () {
     if (level === 0) return;
