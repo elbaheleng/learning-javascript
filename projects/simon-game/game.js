@@ -41,6 +41,7 @@ function gameOver() {
     var audio = new Audio('sounds/wrong.mp3');
     audio.play();
 }
+
 $(".btn").on("click", function () {
     if (level === 0) return;
     userPattern.push($(this).attr('id'));
