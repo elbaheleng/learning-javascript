@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: top;
-    height: 70vh;
+    height: 50vh;
     background-color: #075174;
 }
 
@@ -58,8 +58,14 @@ h4{
     font-size: larger;
 }
 footer {
-    text-align: top;
+    text-align: bottom;
     color: white;
     text-align: center;
     margin: 0;
+}
+
+.inst {
+    color: white;
+    text-align: center;
+    
 }
